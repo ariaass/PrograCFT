@@ -1,15 +1,15 @@
 print("Bienvenido a la compañia telefonica UWU, para saber si excedio su saldo ingrese los datos a continuacion")
 DIA=int(input(" Ingrese el total de minutos utilizados en el DIA  "))
 NOCHE=int(input(" Ingrese el total de minutos utilizados en la NOCHE  ")) #Variables que le solicito al cliente de minutos totales
-if DIA<= 100:
+if DIA<= 100: #minutos llamadas dia
     print ("No excede minutos en el DIA") #condicionales para saber si excede o no sus minutos
 else:
     print ("Excede en ", DIA-100, "minutos en el DIA") # le resto los 100 primeros antes del cobro adicional
 
-if NOCHE<= 80:
-    print ("No excede minutos en la NOCHE")
+if NOCHE<= 80: #minutos llamada noche
+    print ("No excede minutos en la NOCHE") 
 else:
-    print("Excede en", NOCHE-80, "minutos en la NOCHE")
+    print("Excede en", NOCHE-80, "minutos en la NOCHE") 
 
 PAGODIA=DIA*10
 PAGONOCHE=NOCHE*7 # variables de cobro sin excedentes 
